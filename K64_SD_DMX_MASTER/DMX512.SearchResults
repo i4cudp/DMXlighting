@@ -1,0 +1,7 @@
+---- g_bDMXWaitEvent Matches (6 in 2 files) ----
+Comlib_server.c (07_soft_component\comlib_server):bool g_bDMXWaitEvent = FALSE;
+Comlib_server.c (07_soft_component\comlib_server):			 g_bDMXWaitEvent = FALSE;
+Comlib_server.c (07_soft_component\comlib_server):			 while(!g_bSDWaitEvent || !g_bDMXWaitEvent)
+task_DMX512.c (09_mqxlite\app):extern bool g_bDMXWaitEvent;
+task_DMX512.c (09_mqxlite\app):    	g_bDMXWaitEvent = TRUE;
+task_DMX512.c (09_mqxlite\app):		g_bDMXWaitEvent = FALSE;

@@ -79,7 +79,7 @@ all: K64_DMX_MASTER.elf secondary-outputs
 K64_DMX_MASTER.elf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: Cross ARM C++ Linker'
-	arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "intflash.ld" -nostartfiles -Xlinker --gc-sections -L"E:/LED_DMX512/K64_SD_DMX_MASTER/04_Linker_File" -L"E:\LED_DMX512\K64_SD_DMX_MASTER\09_MQXLite\kernel" -Wl,-Map,"K64_DMX_MASTER.map" -specs=nano.specs -specs=nosys.specs -o "K64_DMX_MASTER.elf" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "intflash.ld" -nostartfiles -Xlinker --gc-sections -L"E:/LED_DMX512/git/DMXlighting/K64_SD_DMX_MASTER/04_Linker_File" -L"E:\LED_DMX512\git\DMXlighting\K64_SD_DMX_MASTER\09_MQXLite\kernel" -Wl,-Map,"K64_DMX_MASTER.map" -specs=nano.specs -specs=nosys.specs -o "K64_DMX_MASTER.elf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
